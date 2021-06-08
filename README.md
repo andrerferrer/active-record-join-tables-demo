@@ -6,6 +6,10 @@ This is a demo to show-case how to create models in a join table.
 
 ## What needs to be done?
 
+### This is the DB Schema
+![Untitled (2)](https://user-images.githubusercontent.com/45776359/121184994-00af1800-c83c-11eb-8f80-9a17aa5345f7.png)
+
+### How to Seed?
 Check the [seeds](db/seeds.rb):
 
 ```ruby

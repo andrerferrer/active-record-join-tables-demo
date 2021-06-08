@@ -1,18 +1,30 @@
 # GOAL
 
-This is a demo to show-case how to implement .
+This is a demo to show-case how to create models in a join table.
 
 [You can also check my other demos](https://github.com/andrerferrer/dedemos/blob/master/README.md#ded%C3%A9mos).
 
 ## What needs to be done?
 
-### 1. Add the gem
-```ruby
-# Gemfile
-gem ''
-```
+Check the [seeds](db/seeds.rb):
 
-Remember to `bundle install`
+```ruby
+puts 'Create one shopping cart'
+
+order = ShoppingCart.new
+# This creates a product in the cart
+ProductCart.create!(meal: Meal.first, shopping_cart: order)
+# This does exactly the same as above with another syntax for the second meal
+order.meals << Meal.second
+# Now, we should be able to check the shopping cart
+p "Shopping cart = "
+p order
+puts "\n\n\n"
+# And to check the products inside
+p "Products in the shopping cart ="
+p order.meals
+puts "\n\n\n"
+```
 
 ### If you want to check it locally
 ```sh

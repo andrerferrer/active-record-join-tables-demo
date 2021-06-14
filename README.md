@@ -32,7 +32,7 @@ puts "\n\n\n"
 
 ### If you want to check it locally
 ```sh
-repo_name="restaurants-boilerplate"
+repo_name="active-record-join-tables-demo"
 gh_repository="git@github.com:andrerferrer/$repo_name.git"
 git clone $gh_repository demo
 cd demo
